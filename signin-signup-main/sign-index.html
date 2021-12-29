@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/assets/icon-seven.png">
+
+        <!--  style  -->
+        <link rel="stylesheet" href="/signin-signup-main/assets/css/sign-style.css">
+    
+        <!-- icons -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Daftar & Masuk | Kelompok 7</title>
+    </head>
+    <body>
+        <div class="login">
+            <div class="login__content">
+                <div class="login__img">
+                    <img src="/assets/hello2.png" alt="">
+                </div>
+
+                <div class="login__forms">
+                    <form action="" class="login__registre" id="login-in">
+                        <h1 class="login__title">Masuk</h1>
+                        <div class="login__box">
+                            <i class='bx bx-at login__icon'></i>
+                            <input type="text" placeholder="Email" class="login__input" id="emaillogin">
+                        </div>
+    
+                        <div class="login__box">
+                            <i class='bx bx-lock-alt login__icon'></i>
+                            <input type="password" placeholder="Password" class="login__input" id="passlogin">
+                        </div>
+
+                        <a href="#" class="login__forgot">Lupa sandi?</a>
+                        <!-- captcha -->
+                        <table>
+                            <tr><td id="capt">Captcha : </td>
+                                <td id="captcha"></td>
+                            </tr>
+                            <tr>
+                                <td id="masukkan">masukkan  : </td>
+                                <td><input type="text" name="recaptcha" id="recaptcha" placeholder=""/></td>
+                                <td id="errCaptcha" class="errmsg"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align:right;">
+                                    <input id="btn-cpt" type="button" value="Submit" onClick="validateRecaptcha()"/></td>
+                            </tr>
+                        </table> 
+                        <!-- captcha end -->
+                        <a href="#" class="login__button" id="masuk">Masuk</a>
+
+                        <div>
+                            <span class="login__account">Belum memiliki akun ?</span>
+                            <span class="login__signin" id="sign-up">Daftar</span>
+                        </div>
+                    </form>
+                    <form action="" class="login__create none" id="login-up">
+                        <h1 class="login__title">Daftar Akun</h1>
+    
+                        <!-- <div class="login__box">
+                            <i class='bx bx-user login__icon'></i>
+                            <input type="text" placeholder="Username" class="login__input">
+                        </div> -->
+    
+                        <div class="login__box">
+                            <i class='bx bx-at login__icon'></i>
+                            <input type="text" placeholder="Email" class="login__input" id="email">
+                        </div>
+
+                        <div class="login__box">
+                            <i class='bx bx-lock-alt login__icon'></i>
+                            <input type="password" placeholder="Password" class="login__input" id="pass">
+                        </div>
+
+                        <a href="#" class="login__button" id="daftar">Daftar</a>
+
+                        <div>
+                            <span class="login__account">Sudah punya akun?</span>
+                            <span class="login__signup" id="sign-in">Masuk</span>
+                        </div>
+                        
+                        <!-- <div class="login__social">
+                            <a href="#" class="login__social-icon"><i class='bx bxl-facebook' ></i></a>
+                            <a href="#" class="login__social-icon"><i class='bx bxl-twitter' ></i></a>
+                            <a href="#" class="login__social-icon"><i class='bx bxl-google' ></i></a>
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- js -->
+        <script src="/signin-signup-main/assets/js/main.js"></script>
+        <!-- authen js -->
+        <script src="/signin-signup-main/assets/js/authen.js" type="module"></script>
+    </body>
+</html>

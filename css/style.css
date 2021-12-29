@@ -1,0 +1,153 @@
+@import url(/css/font.css);
+*{
+    margin: 0;
+} 
+body{
+    font-family: poppins;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    display: inline;
+}
+
+/* navbar */
+nav{
+    height: 40px;
+}
+.nav-brand{
+    padding-top: 5px;
+}
+.nav-brand a{
+    margin-left: 80px;
+    font-family: poppins-bold;
+    font-size: 25px;
+    color: black;
+}
+.nav-brand a span{
+    color: #00E94F;
+}
+.nav-menu{
+    margin-top: -25px;
+    margin-left: 65%;
+}
+.nav-menu li a{
+    float: left;
+    padding: 0 0 0 50px;
+    color: black;
+}
+.nav-menu li a:hover{
+    color: #00E94F;
+}
+
+/* Tertinggi */
+.tertinggi{
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-bottom: 160px;
+}
+.tertinggi h2{
+    margin-left: 70px;
+    font-size: 35px;
+    font-family: poppins-bold;
+    line-height: 70px;
+    color: #00E94F;
+}
+.tertinggi img{
+    width: 650px;
+    border-radius: 50%;
+    margin-top: -275px;
+    float: right;
+    margin-right: -90px;
+}
+.box{
+    width: 80%;
+    height: 300px;
+    margin-left: 5%;
+    background-color: white;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.tertinggi table td{
+    padding: 0 30px;
+}
+.tertinggi input[type=text] {
+    float: left;
+    padding: 6px;
+    height: 31px;
+    border: none;
+    margin-top: 50px;
+    margin-left: 110px;
+    font-size: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    outline: none;
+    text-align: left;
+}
+.tertinggi button {
+    float: left;
+    padding: 6px 10px;
+    margin-top: 50px;
+    margin-left: -301px;
+    color: #00E94F;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 27px;
+    border: none;
+    cursor: pointer;
+}
+/* time */
+.time{
+    
+    margin-left: 100px;
+}
+
+/* daftar */
+.daftar{
+    margin-top: 50px;
+    
+}
+.daftar h2{
+    font-size: 17px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+.daftar h6{
+    float: right;
+    margin-top: -40px;
+    margin-right: 100px;
+    font-size: 15px;
+    color: #00E94F;
+}
+.daftar table{
+    width: 85%;
+    margin-left: 100px;
+    border-collapse:collapse;
+    line-height: 50px;
+}
+.daftar table th{
+    height: 10px;
+    background-color: #00E94F;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: #F8F8F8;
+}
+/* footer */
+footer{
+    margin-top: 50px;
+    background-color: #00E94F;
+    height: 50px;
+    color: white;
+    text-align: center;
+    font-family: poppins;
+    font-size: 18px;
+}
